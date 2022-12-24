@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagination</title>
+    <style>
+        .pagination{
+        display:flex;
+            justify-content: center;
+
+        }
+      
+        .btn{
+            position: fixed;
+            bottom: 30px;
+        }
+        td{
+            border: 3px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title" style="align-items: center;" >pagination</h1><br><hr>
+    <div class = "table-responsive">
+        <p id="description">To create pagination using DOM</p>
+        <table class="table table-bordered">
+            <thead>  
+                 <tr>
+                <td>Id
+                </td>
+                <td>Name</td>
+                <td>e-mail</td>
+            </tr>
+        </thead>
+        <tbody>
+
+
+        </tbody>
+         
+        </table> 
+    </div>
+    <div class="pagination">
+        <div class="btn">
+        <button onclick="c_clicked(this)" class="btn-first" for="1">First</button>
+        <button class="btn-previous" for="pr"></for>Previous</button>
+        <button onclick="c_clicked(this)" class="btn-1" for="1"></for>1</button>
+        <button onclick="c_clicked(this)" class="btn-2" for="2"></for>2</button>
+        <button onclick="c_clicked(this)" class="btn-3" for="3"></for>3</button>
+        <button onclick="c_clicked(this)" class="btn-4" for="4"></for>4</button>
+        <button onclick="c_clicked(this)" class="btn-5" for="5"></for>5</button>
+        <button class="btn-next" for="ne"></for>Next</button>
+        <button onclick="c_clicked(this)" class="last" for="100">Last</button>
+  
+    </div>
+</div>
+<script src="/script.js"></script>
+</body>
+</html>  
